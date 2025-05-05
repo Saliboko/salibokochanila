@@ -1,0 +1,11 @@
+body{
+background-color:#808080;
+}
+.btn a{
+color: red;
+font-size:12px;
+text-decoration: none;
+}
+.btn a:hover{
+color: #ffffff;
+}

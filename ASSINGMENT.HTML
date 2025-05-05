@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>assingment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    .hidden {
+        display: none;
+    }
+    
+    .login-box {
+        width: 300px;
+        margin: 100px auto;
+        background-color: #0000b8;
+        padding: 30px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+    }
+    
+    .login-box h2 {
+        text-align: center;
+    }
+    
+    input[type="text"],
+    input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin: 8px 0;
+    }
+    
+    button {
+        width: 100%;
+        padding: 10px;
+        background-color: yellow;
+        color: white;
+        border-radius: 30px;
+        font-weight: bold;
+        font-size: 25px;
+        cursor: pointer;
+    }
+</style>
+<center>
+
+    <body>
+        <div id="loginPage" class="login-box">
+            <h2>Login</h2>
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button onclick="login()">Login</button>
+        </div>
+
+        <!-- MAIN WEBSITE (HIDDEN UNTIL LOGIN) -->
+        <div id="website" class="hidden">
+            <table border=0 width="100%" cellpanding="0" cellspacing="0">
+                <tr>
+                    <CAPTION>
+                        <H1>
+                            <CENTER>HALAA MADRID</CENTER>
+                        </H1>
+                    </CAPTION>
+                    <td colspan="5">
+                        <img src="hala madrid.png" width="100%" height="300px">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="btn">
+                        <center><a href="home.HTML">HOME</a></td>
+                    <td class="btn">
+                        <center><a href="about us.HTML">ABOUT US</a></td>
+                    <td class="btn">
+                        <center><a href="services.HTML">SERVICES</a></td>
+                    <td class="btn">
+                        <center><a href="admision.HTML">ADMISION</a></td>
+                    <td class="btn">
+                        <center><a href="Log in.HTML">Log in</a></td>
+                    </center>
+                </tr>
+                <tr>
+                    <td colspan="5">
+                        <marquee direction="right">
+                            <img src="big result.jfif" width="20%" height="120px">
+                            <img src="MBAPPE.JPG" width="20%" height="120px">
+                            <img src="RODRI.jpg" width="20%" height="120px">
+                            <img src="DORT.JPG" width="20%" height="120px">
+                            <img src="VIN.JPG" width="20%" height="120px">
+                        </marquee>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="5">
+                        <H3>
+                            <P>Real Madrid, officially the Royal Madrid Football Club, is a Spanish professional football club with a rich history, founded in 1902 as Madrid Football Club.The club is known for its impressive record of victories, particularly
+                                in the UEFA Champions League, and its status as one of the most successful and prestigious clubs in the world.
+                            </p>
+                        </h3>
+                        <img src="madrid.png" WIDTH="100%" HEIGHT="100%"></td>
+                </tr>
+                <table>
+        </div>
+        <script>
+            function login() {
+                const user = document.getElementById("username").value;
+                const pass = document.getElementById("password").value;
+
+                // Simple fixed login for demo
+                if (user === "chanila" && pass === "1234") {
+                    document.getElementById("loginPage").style.display = "none";
+                    document.getElementById("website").classList.remove("hidden");
+                } else {
+                    alert("Invalid username or password!");
+                }
+            }
+        </script>
+        </center>
+    </body>
+
+</html>
